@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+#todolist{
+    margin-top: 50px;
+    background-color: #1E272E;
+    flex-basis: 542px;
+    padding: 23px 30px 30px 30px;
+}
+#todolist .task_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+#todolist .task_head #your_task{
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #FF6F6F;
+    flex-grow: 0.95;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FF6F6F;
+}
+#todolist .task_head #your_task::placeholder{
+    font-size: 16px;
+    color: #FF6F6F;
+}
+#todolist .task_head #add{
+    background-color: #FF2B2B;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 13px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+#todolist .task_head #add:hover{
+    cursor: pointer;
+}
+#todolist .task_body #list_task{
+    margin-bottom: 27px;
+    color: #C7C7C7;
+}
+#todolist .task_body #list_task .task_item{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    border-bottom: 1px solid #676767;
+}
+#todolist .task_body #list_task .task_item[taskStatus=true] .task_name{
+    text-decoration: line-through;
+    color: #828282;
+}
+.task_item .task_name.task{
+    cursor: pointer;
+}
+#todolist .task_body #list_task .task_item .task_name{
+    font-size: 15px;
+    flex-grow: 1;
+}
+#todolist .task_body #list_task .task_item .task_name:hover{
+    color: #ffffff;
+    transition: all 0.25s;
+}
+#todolist .task_body #list_task .task_item .task_option button{
+    background-color: transparent;
+    color: #C7C7C7;
+    width: 30px;
+    border: none;
+    outline: none;
+}
+#todolist .task_body #list_task .task_item .task_option button:hover{
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+#todolist .task_body #task_complete{
+    color: #828282;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+}
